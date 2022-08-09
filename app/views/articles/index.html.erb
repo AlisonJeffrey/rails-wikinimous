@@ -1,0 +1,13 @@
+<button type="button" class="btn btn-light"><%= link_to 'New Article', new_article_path %></button>
+
+
+<ul class="list-group">
+  <% @articles.each do |article|%>
+    <li class="list-group-item">
+      <div>
+        <h3 class=""><%= article.title %></h3>
+        <p><%= article.content %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>
